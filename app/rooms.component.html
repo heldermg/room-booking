@@ -1,0 +1,7 @@
+<h1>{{title}}</h1>
+<h2>Rooms</h2>
+<ul class="rooms">
+  <li *ngFor="#room of rooms" (click)="gotoDetail(room)">
+    <span class="badge">{{room.id}}</span> {{room.name}}
+  </li>
+</ul>
