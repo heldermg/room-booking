@@ -1,18 +1,17 @@
 import { Component, OnInit } from 'angular2/core';
 import { Router } from 'angular2/router';
-
 import { Room } from './room';
 import { RoomDetailComponent } from './room-detail.component';
 import { RoomService } from './room.service';
 
 @Component({
-    selector: 'rooms',
-    templateUrl: 'app/rooms.component.html',
-    styleUrls: ['app/rooms.component.css'],
+    selector: 'room-list',
+    templateUrl: 'app/room/room-list.component.html',
+    styleUrls: ['app/room/room-list.component.css'],
     directives: [RoomDetailComponent]
 })
 
-export class RoomsComponent implements OnInit {
+export class RoomListComponent implements OnInit {
     rooms: Room[];
     selectedRoom: Room;
 
@@ -28,8 +27,6 @@ export class RoomsComponent implements OnInit {
     ngOnInit() {
         this.getRooms();
     }
-
-    //onSelect(room: Room) { this.selectedRoom = room; }
 
     gotoDetail(room: Room) {
         this._router.navigate(['RoomDetail', { id: room.id }])

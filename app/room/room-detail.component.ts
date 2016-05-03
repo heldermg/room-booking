@@ -6,8 +6,8 @@ import { RoomService } from './room.service';
 
 @Component({
   selector: 'room-detail',
-  templateUrl: 'app/room-detail.component.html',
-  styleUrls: ['app/room-detail.component.css']
+  templateUrl: 'app/room/room-detail.component.html',
+  styleUrls: ['app/room/room-detail.component.css']
 })
 
 export class RoomDetailComponent implements OnInit {

@@ -1,10 +1,8 @@
-import { Component }       from 'angular2/core';
+import { Component } from 'angular2/core';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
-
-import { RoomService }     from './room.service';
-import { RoomsComponent } from './rooms.component';
-import { RoomDetailComponent } from './room-detail.component';
-//import { MenuComponent } from './menu.component';
+import { RoomService } from './room/room.service';
+import { RoomListComponent } from './room/room-list.component';
+import { RoomDetailComponent } from './room/room-detail.component';
 
 @Component({
   selector: 'room-booking',
@@ -21,7 +19,7 @@ import { RoomDetailComponent } from './room-detail.component';
     {
         path: '/rooms',
         name: 'Rooms',
-        component: RoomsComponent,
+        component: RoomListComponent,
     },
     {
         path: '/detail/:id',

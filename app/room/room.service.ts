@@ -1,6 +1,6 @@
-import {Injectable} from 'angular2/core';
-import {ROOMS} from './mock-rooms';
-import {Room} from './room';
+import { Injectable } from 'angular2/core';
+import { ROOMS } from './mock-rooms';
+import { Room } from './room';
 
 @Injectable()
 export class RoomService {
