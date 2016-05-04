@@ -13,4 +13,12 @@ export class RoomService {
       .then(rooms => rooms.filter(room => room.id === id)[0]
     );
   }
+
+  saveRoom(room: Room) {
+    ROOMS.push(room);
+  }
+
+  removeRoom(roomId: number) {
+    ROOMS = ROOMS.filter(room => room.id !== roomId);
+  }
 }

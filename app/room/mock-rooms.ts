@@ -1,4 +1,4 @@
-import {Room} from './room';
+import { Room } from './room';
 
 export var ROOMS: Room[] = [
   { "id": 1, "name": "Sala de Homologação 1" },

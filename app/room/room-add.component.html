@@ -1,13 +1,12 @@
-<div *ngIf="room">
-    <h2>{{room.name}} details!</h2>
+<div>
+    <h2>Add new Room!</h2>
     <div>
-        <label>Id: </label>{{room.id}}</div>
+        <label>Id: </label>
+        <input [(ngModel)]="room.id" placeholder="id" />
     <div>
         <label>Name: </label>
         <input [(ngModel)]="room.name" placeholder="name" />
     </div>
-    <div>
-        <booking-list></booking-list>
-    </div>
+    <button (click)="save()">Save</button>
     <button (click)="goBack()">Back</button>
 </div>

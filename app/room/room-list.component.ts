@@ -29,6 +29,10 @@ export class RoomListComponent implements OnInit {
     }
 
     gotoDetail(room: Room) {
-        this._router.navigate(['RoomDetail', { id: room.id }])
+        this._router.navigate(['RoomDetail', { id: room.id }]);
+    }
+
+    gotoAdd() {
+        this._router.navigate(['RoomAdd']);
     }
 }
