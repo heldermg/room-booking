@@ -9,8 +9,8 @@
 6 silly lifecycle angular2-quickstart@1.0.0~prestart: no script for prestart, continuing
 7 info lifecycle angular2-quickstart@1.0.0~start: angular2-quickstart@1.0.0
 8 verbose lifecycle angular2-quickstart@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle angular2-quickstart@1.0.0~start: PATH: /home/04761157445/.nvm/versions/node/v5.5.0/lib/node_modules/npm/bin/node-gyp-bin:/home/04761157445/Desktop/room-booking/node_modules/.bin:/home/04761157445/.nvm/versions/node/v5.5.0/bin:/usr/share/maven2/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/lib/jvm/jdk1.6.0_32/bin:/home/04761157445/Programas/maven-1.0.2/bin
-10 verbose lifecycle angular2-quickstart@1.0.0~start: CWD: /home/04761157445/Desktop/room-booking
+9 verbose lifecycle angular2-quickstart@1.0.0~start: PATH: /home/04761157445/.nvm/versions/node/v5.5.0/lib/node_modules/npm/bin/node-gyp-bin:/home/04761157445/Desktop/GitHub/room-booking/node_modules/.bin:/home/04761157445/.nvm/versions/node/v5.5.0/bin:/usr/share/maven2/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/lib/jvm/jdk1.6.0_32/bin:/home/04761157445/Programas/maven-1.0.2/bin
+10 verbose lifecycle angular2-quickstart@1.0.0~start: CWD: /home/04761157445/Desktop/GitHub/room-booking
 11 silly lifecycle angular2-quickstart@1.0.0~start: Args: [ '-c', 'tsc && concurrently "tsc -w" "lite-server" ' ]
 12 silly lifecycle angular2-quickstart@1.0.0~start: Returned: code: 2  signal: null
 13 info lifecycle angular2-quickstart@1.0.0~start: Failed to exec start script
@@ -25,7 +25,7 @@
 14 verbose stack     at maybeClose (internal/child_process.js:821:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
 15 verbose pkgid angular2-quickstart@1.0.0
-16 verbose cwd /home/04761157445/Desktop/room-booking
+16 verbose cwd /home/04761157445/Desktop/GitHub/room-booking
 17 error Linux 3.2.0-58-generic-pae
 18 error argv "/home/04761157445/.nvm/versions/node/v5.5.0/bin/node" "/home/04761157445/.nvm/versions/node/v5.5.0/bin/npm" "start"
 19 error node v5.5.0

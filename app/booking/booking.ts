@@ -4,7 +4,7 @@ export class Booking {
     id: number;
     room: number;
     subject: string;
-    description: string;
     startDate: string;
     endDate: string;
+    description: string;
 }
