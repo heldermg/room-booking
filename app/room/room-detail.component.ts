@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from 'angular2/core';
 import { RouteParams } from 'angular2/router';
+import { Router } from 'angular2/router';
 import { Room } from './room';
 import { RoomService } from './room.service';
 import { BookingListComponent } from '../booking/booking-list.component';
@@ -15,6 +16,7 @@ export class RoomDetailComponent implements OnInit {
   @Input() room: Room;
 
   constructor(
+    private _router: Router,
     private _routeParams: RouteParams,
     private _roomService: RoomService) {
   }
@@ -26,6 +28,6 @@ export class RoomDetailComponent implements OnInit {
   }
 
   goBack() {
-    window.history.back();
+    this._router.navigate(['Rooms']);
   }
 }

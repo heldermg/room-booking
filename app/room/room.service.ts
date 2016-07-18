@@ -5,20 +5,20 @@ import { Room } from './room';
 @Injectable()
 export class RoomService {
   getRooms() {
-    return Promise.resolve(ROOMS);
+      return Promise.resolve(ROOMS);
   }
 
   getRoom(id: number) {
-    return Promise.resolve(ROOMS)
-      .then(rooms => rooms.filter(room => room.id === id)[0]
-    );
+      return Promise.resolve(ROOMS)
+        .then(rooms => rooms.filter(room => room.id === id)[0]
+      );
   }
 
   saveRoom(room: Room) {
-    ROOMS.push(room);
+      ROOMS.push(room);
   }
 
   removeRoom(roomId: number) {
-    ROOMS = ROOMS.filter(room => room.id !== roomId);
+      ROOMS.filter(room => room.id !== roomId);
   }
 }

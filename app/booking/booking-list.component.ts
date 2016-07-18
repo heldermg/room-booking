@@ -1,20 +1,26 @@
 import { Component, OnInit } from 'angular2/core';
+import { Router } from 'angular2/router';
 import { RouteParams } from 'angular2/router';
 import { Booking } from './booking';
 import { BookingService } from './booking.service';
+import { RoomService } from '../room/room.service';
+import { Room } from '../room/room';
 
 @Component({
     selector: 'booking-list',
-    templateUrl: 'app/booking/booking-list.component.html'
-    //styleUrls: ['app/booking/booking-list.component.css'],
+    templateUrl: 'app/booking/booking-list.component.html',
+    styleUrls: ['app/booking/booking-list.component.css']
 })
 
 export class BookingListComponent implements OnInit {
     bookings: Booking[];
+    roomId: number;
 
     constructor(
         private _routeParams: RouteParams,
-        private _bookingService: BookingService) {
+        private _router: Router,
+        private _bookingService: BookingService,
+        private _roomService: RoomService) {
     }
 
     getBookingsByRoom(roomId: number) {
@@ -23,7 +29,15 @@ export class BookingListComponent implements OnInit {
     }
 
     ngOnInit() {
-        let roomId = +this._routeParams.get('id');
-        this.getBookingsByRoom(roomId);
+        this.roomId = +this._routeParams.get('id');
+        this.getBookingsByRoom(this.roomId);
+    }
+
+    gotoAddBooking() {
+        this._router.navigate(['BookingAdd', {id: this.roomId}]);
+    }
+
+    gotoDetailBooking(booking: Booking) {
+        this._router.navigate(['BookingDetail', {id: booking.id}]);
     }
 }
