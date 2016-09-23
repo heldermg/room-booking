@@ -19,6 +19,6 @@ export class RoomService {
   }
 
   removeRoom(roomId: number) {
-    ROOMS = ROOMS.filter(room => room.id !== roomId);
+    //ROOMS = ROOMS.filter(room => room.id !== roomId);
   }
 }

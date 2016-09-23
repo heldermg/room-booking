@@ -9,7 +9,7 @@ export class BookingService {
   }
 
   removeBooking(bookingId: number) {
-    BOOKINGS = BOOKINGS.filter(booking => booking.id !== bookingId);
+    //BOOKINGS = BOOKINGS.filter(booking => booking.id !== bookingId);
   }
 
   getBookingsByRoom(roomId: number) {
