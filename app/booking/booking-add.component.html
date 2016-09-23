@@ -1,0 +1,24 @@
+<div>
+    <h2>Add new Booking!</h2>
+    <div>
+        <label>Id: </label>
+        <input [(ngModel)]="booking.id" placeholder="id" />
+    <div>
+        <label>Name: </label>
+        <input [(ngModel)]="booking.subject" placeholder="subject" />
+    </div>
+    <div>
+        <label>Start Date: </label>
+        <input [(ngModel)]="booking.startDate" placeholder="Start Date" type="date" />
+    </div>
+    <div>
+        <label>End Date: </label>
+        <input [(ngModel)]="booking.endDate" placeholder="End Date" type="date" />
+    </div>
+    <div>
+        <label>Description: </label>
+        <textarea [(ngModel)]="booking.description" placeholder="Description"></textarea>
+    </div>
+    <button (click)="save()">Save</button>
+    <button (click)="goBack()">Back</button>
+</div>

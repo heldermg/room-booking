@@ -1,6 +1,8 @@
 <h3>Bookings</h3>
-<ul>
-    <li *ngFor="let booking of bookings">
-        <span class="badge">{{booking.id}}</span> {{booking.subject}}
-    </li>
-</ul>
+<button (click)="gotoAddBooking()">Add</button>
+<table>
+    <tr *ngFor="let booking of bookings">
+        <td (click)="gotoDetailBooking(booking)"><label>Id: </label> {{booking.id}}</td>
+        <td (click)="gotoDetailBooking(booking)"><label>Assunto: </label> {{booking.subject}}</td>
+    </tr>
+</table>

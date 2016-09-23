@@ -1,0 +1,22 @@
+<div *ngIf="booking">
+    <h2>{{booking.subject}} details!</h2>
+    <div><label>Id: </label>{{booking.id}}</div>
+    <div><label>Room: </label>{{booking.room}}</div>
+    <div>
+        <label>Subject: </label>
+        <input [(ngModel)]="booking.subject" placeholder="Subject" />
+    </div>
+    <div>
+        <label>Start Date: </label>
+        <input [(ngModel)]="booking.startDate" placeholder="Start Date" type="date" />
+    </div>
+    <div>
+        <label>End Date: </label>
+        <input [(ngModel)]="booking.endDate" placeholder="End Date" type="date" />
+    </div>
+    <div>
+        <label>Description: </label>
+        <textarea [(ngModel)]="booking.description" placeholder="Description"></textarea>
+    </div>
+    <button (click)="goBack()">Back</button>
+</div>

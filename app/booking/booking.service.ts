@@ -9,12 +9,16 @@ export class BookingService {
   }
 
   removeBooking(bookingId: number) {
+<<<<<<< HEAD
     //BOOKINGS = BOOKINGS.filter(booking => booking.id !== bookingId);
+=======
+    BOOKINGS.filter(booking => booking.id !== bookingId);
+>>>>>>> f40145abf0247fc688a8f41702de8cfe957473aa
   }
 
   getBookingsByRoom(roomId: number) {
     return Promise.resolve(BOOKINGS)
-      .then(bookings => bookings.filter(booking => booking.room.id === roomId)
+      .then(bookings => bookings.filter(booking => booking.room === roomId)
     );
   }
 
